@@ -1,0 +1,211 @@
+/*############## Defaults ###############*/
+
+body {
+/*    text-align: center;*/
+    font-family: 'Josefin Slab', serif, sans-serif;
+    line-height: 1;
+    margin: 0;
+}
+nav, 
+header, 
+footer {
+    display: block;
+}
+label {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/*################## Custom designs #####################*/
+.Container {
+    width: 100%;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: 
+}
+div h2.Section2heading {
+    font-family: 'Ibarra Real Nova', sans-serif, serif;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+}
+div.box {
+    text-align: center; 
+    background-color: #fff;
+    margin: 11%;
+    padding: 9%;
+    box-shadow: 1px 1px 12px 0px rgb(0 0 0 / 50%);
+    transition: 0.3s;
+}
+div.box:hover {
+    padding: 10%;
+    margin: 10%;
+}
+#Section-1 {
+    background: #fe06;
+    background: -webkit-linear-gradient(#99aa77,#ffffff);
+    background: -o-linear-gradient(#99aa77,#ffffff);
+    background: -moz-linear-gradient(#99aa77,#ffffff);
+    background: linear-gradient(#99aa77,#ffffff);
+}
+div.leftPane {
+    margin: 10%;
+}
+
+div.rightPane {
+    margin: auto;
+}
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
+}
+[class*="col-"] {
+    float: left;
+}
+
+/*################## Nav Bar ######################*/
+nav {
+    width: 100%;
+    margin: 0;
+}
+nav ul {
+    background: #aee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+ul.topnav li {
+    list-style: none;
+    float: left;
+/*    display: inline;*/
+}
+ul.topnav li.topnav_right {
+    float: right;
+}
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    color: darkolivegreen;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    font-family: 'Ibarra Real Nova', serif, sans-serif;
+}
+ul.topnav li a:hover {
+    background-color: #aaaaee;
+}
+ul.topnav li.dropdown_icon {
+    display: none;
+    float: right;
+}
+/*################# Footer ########################*/
+footer.myFoot {
+    background-color: #888;
+    text-align: center;
+}
+footer.myFoot a {
+    text-decoration: none;
+    font-family: 'Josefin Slab', serif, sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+}
+/*################# Mobile ####################*/
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.topnav li.dropdown_icon {
+        display: block;
+        float: right;
+    }
+    ul.topnav.responsive li.dropdown_icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    .col-10,
+    .col-4 {
+        width: 100%;
+        margin: 0;
+    }
+    div.box {
+        padding: 2%;
+        display: block;
+        margin: 2%;
+    }
+    div.leftPane{
+        display: none;
+    }
+    div h2.Section2heading {
+        font-size: 2.5em;
+    }
+    div.stack2 {
+        width: 50%;
+        display: block;
+    }
+    div.box:hover {
+        padding: 3%;
+        margin: 1%;
+    }
+    }
+}
+p {
+    word-spacing: 0.2rem;
+    line-height: 2em;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px #B22222;
+    font-family: 'Josefin Slab', sans-serif;
+    font-size: 3em;
+}
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+.logoImg {
+    max-width: 50%;
+}
+button {
+    display: block;
+    margin: auto;
+}
+
